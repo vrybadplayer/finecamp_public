@@ -1,0 +1,147 @@
+/* Font -------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body,
+input,
+button,
+textarea,
+select {
+    font: 16px 'Roboto', sans-serif;
+}
+
+/* Layout ------------------------------------------------------------------ */
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid: auto auto 1fr auto / auto;
+}
+
+h1#header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    margin: 20px;
+    color: #035391;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 25px;
+}
+
+label {
+    color: #0476d0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40;
+}
+
+label#email {
+    padding-right: 82px;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+}
+
+span#link {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+a {
+    font-size: 15;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #666;
+    margin-left: 0px;
+}
+
+
+input {
+    width: 300px;
+    height: 40px;
+}
+
+input#password {
+    margin-left: 0px;
+}
+
+span#button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    pointer-events: auto;
+
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #035391;
+    border: 3px solid #0476d0;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+
+button:hover {
+    background-color: #0476d0;
+    border: 3px solid #035391;
+}
+
+.err {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(119, 0, 0);
+}
+
+#info {
+    position: fixed;
+    color: #fff;
+    background: #666;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px 20px;
+    left: 50%;
+    translate: -50% 0;
+    z-index: 999;
+
+    top: -100px;
+    opacity: 0;
+}
+
+#info:not(:empty) {
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {
+        top: -100px;
+        opacity: 0;
+    }
+
+    10% {
+        top: 100px;
+        opacity: 1;
+    }
+
+    90% {
+        top: 100px;
+        opacity: 1;
+    }
+
+    100% {
+        top: -100px;
+        opacity: 0;
+    }
+}

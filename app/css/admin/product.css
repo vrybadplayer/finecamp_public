@@ -1,0 +1,271 @@
+body,
+input,
+button,
+textarea,
+select {
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* Layout ------------------------------------------------------------------ */
+body {
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-size: 30px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+#product_title {
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+
+/* Buttons ----------------------------------------------------------------- */
+button,
+input[type="submit"],
+input[type="reset"] {
+  background-color: #035391;
+  color: white;
+  border: 1px solid #035391;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  border: 1px solid #035391;
+  background-color: white;
+  color: #035391;
+}
+
+tbody td .delete_button {
+  border: 1px solid #e74c3c;
+  background-color: #e74c3c;
+  color: white;
+  text-align: left;
+}
+
+tbody td .delete_button:hover {
+  color: white;
+  background-color: #c0392b;
+}
+
+/* Form Elements ----------------------------------------------------------- */
+/* Form container styling */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Form styling to display elements in one line */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Ensure form elements have consistent width */
+form input[type="search"],
+form select,
+form input[type="submit"],
+form input[type="reset"] {
+  padding: 10px;
+  max-width: 300px;
+  flex: 1;
+}
+
+form label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  max-width: 150px;
+}
+
+
+/* Table Styles ------------------------------------------------------------ */
+
+
+/* General table styling */
+.custom-table {
+  width: 100%;
+  margin-top: 20px;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+/* Header styling */
+.custom-table thead {
+  color: #34495e;
+  background-color: #eceaea;
+}
+
+/* Remove underline from table headers */
+.custom-table th a {
+  text-decoration: none;
+  color: #34495e;
+  position: relative;
+}
+
+/* Cell padding and text alignment */
+.custom-table th,
+.custom-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+/* Add arrow icons for sorting */
+.custom-table th a.asc::after {
+  content: ' ▲';
+  /* Up arrow for ascending */
+  font-size: 12px;
+}
+
+.custom-table th a.desc::after {
+  content: ' ▼';
+  /* Down arrow for descending */
+  font-size: 12px;
+}
+
+/* Hover effect */
+.product_details_row:hover {
+  background-color: #f1f1f1;
+}
+
+/* Borderless styling: Removes borders */
+.borderless-table th,
+.borderless-table td {
+  border-top: none;
+  border-bottom: 1px solid gainsboro;
+}
+
+/* Status styles */
+.status {
+  font-weight: bold;
+}
+
+.status.active {
+  color: rgb(36, 196, 36);
+}
+
+.status.inactive {
+  color: red;
+}
+
+/* Add margin to the left side of the action column */
+.custom-table .center {
+  text-align: center;
+}
+
+.custom-table thead .action {
+  left: 10px;
+}
+
+/* table image */
+table img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+p strong {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 15px;
+  }
+
+  table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+  }
+}
+
+.category-disable-button {
+  border: 1px solid #bbbbbb;
+  background-color: #bbbbbb;
+  color: white;
+  text-align: left;
+}
+
+.category-disable-button:hover {
+  border: 1px solid #bbbbbb;
+  background-color: #bbbbbb;
+  color: white;
+  text-align: left;
+}
+
+/* Action bar container for button and product count */
+.action-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for the product count text */
+.count-found {
+  font-weight: bold;
+  color: #444;
+}

@@ -1,0 +1,218 @@
+.newShippingDetailPage {
+    display: flex;
+    justify-content: center;
+}
+
+.newShippingDetailPageContainer {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    max-width: 80%;
+}
+
+.newShippingDetailContainer, .newShippingDetailPageContainer {
+    width: 100%;
+}
+
+.backBtnContainer {
+    margin-bottom: 1rem;
+}
+
+.backBtn {
+    padding: 10px 25px;
+    background-color: #939496;
+    color: #ffffff;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.15s, background-color 0.15s;
+    text-decoration: none;
+}
+
+.backBtn:hover {
+    background-color: #707070;
+}
+
+.newShippingDetailHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.selectedUserId {
+    font-size: 26px;
+}
+
+.newShippingDetailHeader {
+    font-size: 56px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5.5rem;
+}
+
+.shippingAddressContainer {
+    display: flex;
+}
+
+.recipientInfoContainer, .shippingAddressContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.recipientInfoHeaderContainer {
+    display: flex;
+    align-items: center;
+}
+
+.shippingAddressHeaderContainer {
+    display: flex;
+    align-items: center;
+}
+
+.recipientInfoHeaderContainer, .shippingAddressHeaderContainer {
+    column-gap: 12px;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #035191;
+    padding-bottom: 1rem;
+}
+
+.recipientInfoHeaderContainer img,
+.shippingAddressHeaderContainer img {
+    object-fit: contain;
+    width: 40px;
+}
+
+.recipientInfoHeader, .shippingAddressHeader {
+    font-size: 24px;
+    font-weight: 600;
+    color: #035191;
+}
+
+.recipientInfoFieldContainer {
+    display: flex;
+}
+
+.shippingAddressFieldContainer {
+    display: flex;
+}
+
+.recipientInfoFieldContainer, .shippingAddressFieldContainer {
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.recipientNameContainer,
+.recipientPhoneNoContainer,
+.addressLineContainer,
+.postcodeContainer,
+.cityContainer,
+.stateContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.addressDetailContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    column-gap: 6%;
+}
+
+.addressDetailContainer div {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipientNameTitle, .recipientPhoneNoTitle, .addressLineTitle, .postcodeTitle, .cityTitle, .stateTitle {
+    font-size: 18px;
+    color: #0476d0;
+    margin-bottom: 0.5rem;
+}
+
+.recipientNameContainer input,
+.recipientPhoneNoContainer input,
+.addressLineContainer input,
+.postcodeContainer input,
+.cityContainer input,
+.stateContainer select {
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #0476d0;
+    padding: 10px 4px;
+}
+
+.recipientNameContainer input:focus,
+.recipientPhoneNoContainer input:focus,
+.addressLineContainer input:focus,
+.postcodeContainer input:focus,
+.cityContainer input:focus,
+.stateContainer select:focus {
+    border-radius: 0;
+    outline: 1px solid #035191;
+}
+
+.recipientCountryNPhoneNo {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: auto;
+}
+
+.phoneCode {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #0476d0;
+    border-left: 1px solid #0476d0;
+    border-bottom: 1px solid #0476d0;
+    height: auto;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+#addBtn {
+    padding: 10px 25px;
+    background-color: #0476d0;
+    color: #ffffff;
+    border: 1px solid #0476d0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.15s, background-color 0.15s;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background-color: #035191;
+}
+
+.err {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 820px) {
+    .addressDetailContainer {
+        display: flex;
+        flex-direction: column;
+        column-gap: 0;
+    }
+    
+    .addressDetailContainer div {
+        width: 100%;
+    }
+}

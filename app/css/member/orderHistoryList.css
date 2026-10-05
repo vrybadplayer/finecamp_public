@@ -1,0 +1,183 @@
+.orderHistoryPage {
+    display: flex;
+    justify-content: center;
+}
+
+.orderHistoryPageContainer {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    max-width: 70%;
+}
+
+.orderHistoryContainer, .orderHistoryPageContainer {
+    width: 100%;
+}
+
+.orderHistoryHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3.5rem;
+    border-bottom: 2px solid #035391;
+    padding-bottom: 20px;
+}
+
+.orderHistoryHeader {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #035391;
+}
+
+.orderHistoryNoOfItems {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #035591;
+}
+
+.searchSection {
+    margin-bottom: 2rem;
+}
+
+#search_input {
+    width: 50%;
+}
+
+#search_input, #order_status {
+    padding: 10px 5px;
+    border: 2px solid #0476d0;
+}
+
+.noRecordContainer {
+    margin-bottom: 2rem;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #0476d0;
+    color: #ffffff;
+    border: 1px solid #0476d0;
+    border-radius: 5px;
+    transition: color 0.15s, background-color 0.15s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #035391;
+    border-color: #035391;
+}
+
+.orderHistorySection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.allOrderContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.orderHistoryCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid #dddddd;
+    border-radius: 10px;
+    padding: 3%;
+    font-size: 18px;
+    background-color: #fbfbfb;
+    row-gap: 2rem;
+}
+
+.orderHistoryCardHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    color: #0476d0;
+}
+
+.allProductInfoContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.productInfoContainer {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 2rem;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+
+.productInfoContainer img {
+    border: 3px solid #0476d0;
+    object-fit: contain;
+    width: 160px;
+    height: 160px;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.productName {
+    font-weight: bold;
+}
+
+.qtyPriceInfo {
+    display: flex;
+    column-gap: 10rem;
+}
+
+.summaryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 1rem;
+}
+
+.orderTotalContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.actionContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.actionContainer > a {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #0476d0;
+    color: #fbfbfb;
+    border: 1px solid #0476d0;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: color 0.15s, background-color 0.15s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.actionContainer > a:hover {
+    background-color: #035391;
+    border-color: #035391;
+}
+
+.actionContainer > a > img {
+    object-fit: cover;
+    width: 30px;
+}

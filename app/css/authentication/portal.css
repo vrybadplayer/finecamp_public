@@ -1,0 +1,135 @@
+/* Font -------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body,
+input,
+button,
+textarea,
+select {
+    font: 16px 'Roboto', sans-serif;
+}
+
+/* Layout    7fa1c3 ------------------------------------------------------------------ */
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid: auto auto 1fr auto / auto;
+    background-color: #f9f9f9;
+}
+
+#welcome {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #035391;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 45px;
+}
+
+span#title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+span#buttons {
+    width: 700px;
+    height: 350px;
+    padding-right: 17px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32;
+}
+
+span>h1 {
+    color: white;
+    text-align: center;
+    font-size: 38;
+}
+
+.button {
+    width: 300px;
+    height: 300px;
+}
+
+img#button {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    border: 10px solid #0476d0;
+    box-shadow: 6px 6px 10px #00000059;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+span#title {
+    display: flex;
+    justify-content: center;
+}
+
+img#logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 5ch;
+
+}
+
+img#button:hover {
+    width: 310px;
+    height: 310px;
+    border: 15px solid #035391;
+}
+
+#info {
+    position: fixed;
+    color: #fff;
+    background: #666;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px 20px;
+    left: 50%;
+    translate: -50% 0;
+    z-index: 999;
+
+    top: -100px;
+    opacity: 0;
+}
+
+#info:not(:empty) {
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {
+        top: -100px;
+        opacity: 0;
+    }
+
+    10% {
+        top: 100px;
+        opacity: 1;
+    }
+
+    90% {
+        top: 100px;
+        opacity: 1;
+    }
+
+    100% {
+        top: -100px;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,142 @@
+.shippingDetailPage {
+    display: flex;
+    justify-content: center;
+}
+
+.shippingDetailPageContainer {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    max-width: 80%;
+}
+
+.shippingDetailContainer, .shippingDetailPageContainer {
+    width: 100%;
+}
+
+.backBtnContainer {
+    margin-bottom: 1rem;
+}
+
+.backBtn {
+    padding: 10px 25px;
+    background-color: #939496;
+    color: #ffffff;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.15s, background-color 0.15s;
+    text-decoration: none;
+}
+
+.backBtn:hover {
+    background-color: #707070;
+}
+
+.shippingDetailHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.selectedUserId {
+    font-size: 26px;
+}
+
+.shippingDetailHeader {
+    font-size: 56px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.shippingDetailSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.shippingDetailHeaderSection, .allShippingDetailContainer {
+    flex: 1;
+}
+
+.allShippingDetailContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.shippingDetailHeaderSection {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #035391;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.shippingDetailTitleContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.shippingDetailTitleContainer img {
+    width: 50px;
+}
+
+.shippingDetailTitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #035391;
+}
+
+.addShippingDetailBtn {
+    padding: 2px 6px;
+    background-color: #035191;
+    color: #ffffff;
+    border: 2px solid #035191;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: 700;
+    transition: color 0.15s, background-color 0.15s;
+    text-decoration: none;
+}
+
+.addShippingDetailBtn:hover {
+    color: #035191;
+    background-color: #ffffff;
+}
+
+.noRecordContainer {
+    padding-top: 20px;
+}
+
+.shippingDetailCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 20px 15px;
+}
+
+.shippingDetailCard:nth-child(odd) {
+    background-color: #ecedec;
+}
+
+.shippingDetailCard:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.shippingDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.recipientName {
+    font-weight: bold;
+}
+
+.editBtnContainer img {
+    cursor: pointer;
+    width: 30px;
+}

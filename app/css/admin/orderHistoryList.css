@@ -1,0 +1,156 @@
+.orderHistoryPage {
+    display: flex;
+    justify-content: center;
+}
+
+.orderHistoryPageContainer {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    max-width: 80%;
+}
+
+.orderHistoryContainer, .orderHistoryPageContainer {
+    width: 100%;
+}
+
+.back {
+    background-color: #035391;
+    color: white;
+    border: 1px solid #035391;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.back:hover {
+    background: white;
+    color: #035391;
+}
+
+.orderHistoryHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3.5rem;
+    border-bottom: 2px solid #035391;
+    padding-bottom: 20px;
+}
+
+.orderHistoryHeader {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #035391;
+}
+
+.orderHistoryNoOfItems {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #035591;
+}
+
+.searchSection {
+    margin-bottom: 2rem;
+}
+
+#search_input {
+    width: 50%;
+}
+
+#search_input, #order_status {
+    padding: 10px 5px;
+    border: 2px solid #0476d0;
+}
+
+.noRecordContainer {
+    margin-bottom: 2rem;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #0476d0;
+    color: #ffffff;
+    border: 1px solid #0476d0;
+    border-radius: 5px;
+    transition: color 0.15s, background-color 0.15s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #035391;
+    border-color: #035391;
+}
+
+.orderHistorySection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.allOrderContainer {
+    width: 100%; 
+}
+
+.allOrderContainer th {
+    text-align: left;
+}
+
+.allOrderContainer td {
+    border: 0 !important;
+    border-bottom: 1px solid #cccccc !important;
+}
+
+.allOrderContainer th,
+.allOrderContainer td {
+    padding: 10px 20px;
+}
+
+.itemRow {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    column-gap: 1rem;
+    padding: 10px 0;
+}
+
+.itemRow div {
+    overflow: hidden;
+}
+
+.actionContainer {
+    border-top: 0 !important;
+    border-left: 0 !important;
+}
+
+.actionContainer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actionContainer div > a {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #0476d0;
+    color: #fbfbfb;
+    border: 1px solid #0476d0;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: color 0.15s, background-color 0.15s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.actionContainer div > a:hover {
+    background-color: #035391;
+    border-color: #035391;
+}
+
+.actionContainer div > a > img {
+    object-fit: cover;
+    width: 30px;
+}

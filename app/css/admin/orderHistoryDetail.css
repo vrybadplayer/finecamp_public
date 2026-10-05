@@ -1,0 +1,278 @@
+.orderDetailPage {
+    display: flex;
+    justify-content: center;
+}
+
+.orderDetailPageContainer {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    max-width: 80%;
+}
+
+.orderDetailContainer, .orderDetailPageContainer {
+    width: 100%;
+}
+
+.backBtnContainer {
+    margin-bottom: 1rem;
+}
+
+.backBtn {
+    padding: 10px 25px;
+    background-color: #939496;
+    color: #ffffff;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.15s, background-color 0.15s;
+    text-decoration: none;
+}
+
+.backBtn:hover {
+    background-color: #707070;
+}
+
+.orderDetailHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #035391;
+    padding-bottom: 20px;
+}
+
+.orderDetailHeader {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #035391;
+}
+
+.orderDetailNoOfItems {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #035591;
+}
+
+.orderDetailSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.mainOrderDetailHeaderSection {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 2.5rem;
+}
+
+.idSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.orderDetailTableHeaderContainer {
+    display: grid;
+    grid-template-columns: 50% 15% 15% 15% 5%;
+    color: #0476d0;
+    font-size: 22px;
+    font-weight: bold;
+    border: 3px solid transparent;
+    padding: 0 2%;
+}
+
+.orderDetailTableHeaderContainer div:nth-child(n+2) {
+    display: flex;
+    justify-content: center;
+}
+
+.allOrderItemContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.orderDetailCard {
+    display: grid;
+    grid-template-columns: 50% 15% 15% 15% 5%;
+    align-items: center;
+    border: 3px solid #dddddd;
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 18px;
+    background-color: #fbfbfb;
+}
+
+.productInfoContainer {
+    display: flex;
+    column-gap: 30px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.productInfoContainer img {
+    border: 3px solid #0476d0;
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.productInfo > div:first-child {
+    font-weight: bold;
+}
+
+.unitPriceContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.quantityContainer {
+    display: flex;
+    margin-block-end: 0px;
+}
+
+.finalPriceContainer {
+    font-weight: bold;
+}
+
+.quantityContainer,
+.finalPriceContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.summaryContainer {
+    display: grid;
+    grid-template-columns: minmax(200px, 3fr) 2fr 2fr;
+    column-gap: 5%;
+    margin-top: 2rem;
+}
+
+.statusHeaderContainer {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    color: #0476d0;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.status > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 10px;
+}
+
+.addressMethodContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    border: 3px solid #dddddd;
+    border-radius: 10px;
+    padding: 5%;
+    background-color: #fbfbfb;
+}
+
+.statusContainer,
+.deliveryAddressContainer,
+.paymentMethodContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.statusHeader,
+.deliveryAddressHeader,
+.paymentDetailsHeader,
+.paymentMethodHeader {
+    font-weight: bold;
+    font-size: 22px;
+    color: #0476d0;
+}
+
+.deliveryAddress,
+.paymentMethod {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.deliveryAddress div {
+    word-wrap: break-word;
+}
+
+.statusContainer,
+.paymentDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    border: 3px solid #dddddd;
+    border-radius: 10px;
+    padding: 5%;
+    background-color: #fbfbfb;
+}
+
+.amountContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.amountContainer > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 10px;
+}
+
+#updateStatusContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#updateStatusContainer button {
+    padding: 10px 50px;
+    background-color: #0476d0;
+    color: #fbfbfb;
+    border: 1px solid #0476d0;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    transition: color 0.15s, background-color 0.15s;
+    cursor: pointer;
+}
+
+#updateStatusContainer button:hover {
+    background-color: #035391;
+    border-color: #035391;
+}
+
+#updateStatusContainer div {
+    padding: 10px 50px;
+    background-color: #fdfdfd;
+    color: #cccccc;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    transition: color 0.15s, background-color 0.15s;
+}

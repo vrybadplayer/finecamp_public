@@ -1,0 +1,129 @@
+/* Footer Container */
+.footerContainer {
+  background-color: #035391;
+  padding: 40px 20px;
+  color: white;
+  text-align: left;
+}
+
+/* Footer Layout */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  /* Space out the footer columns */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* Allow columns to wrap on smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Center the footer container */
+}
+
+/* Footer Column */
+.footer-column {
+  flex: 1 1 30%;
+  margin: 15px;
+}
+
+/* Center alignment for the first column */
+.footer-column.center-align {
+  text-align: center;
+}
+
+/* Footer Logo */
+.footer-logo img {
+  width: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.companyName {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  color: white;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Section Title */
+.section-title {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 0;
+}
+
+/* Divider */
+.divider {
+  border: 0;
+  height: 2px;
+  background-color: white;
+  width: 200px;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.dividerLogo {
+  border: 0;
+  height: 2px;
+  background-color: white;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* Contact List */
+.contact-list {
+  text-align: left;
+  /* Align contact info to the left */
+  list-style-type: none;
+  padding-left: 0;
+  /* Remove extra left padding */
+}
+
+.contact-list li {
+  margin: 10px 0;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-links {
+  display: flex;
+  justify-content: flex-start;
+  /* Align icons to the left */
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  border-top: 2px solid white;
+  padding-top: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+a#portal {
+  text-decoration: none;
+  color: white;
+}

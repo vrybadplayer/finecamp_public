@@ -1,0 +1,161 @@
+/* Basic navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #035391;
+  color: #fff;
+}
+
+.navbar .logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.search-bar form {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
+
+.navbar img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+
+.search-bar input[type="search"] {
+  padding: 5px;
+  font-size: 16px;
+  width: 650px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+
+/* Right section */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-icon img {
+  display: block;
+}
+
+.cart-item-number {
+  position: absolute;
+  top: -14px;
+  right: -19px;
+  background-color: red;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 5px 5px 5px 0px;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+  line-height: 1;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* User profile dropdown */
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.user-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-btn:hover {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.user-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.user-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.user-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.user-dropdown:hover .user-dropdown-content {
+  display: block;
+}
+
+.username {
+  font-size: 18px;
+}
+
+#logout {
+  color: red;
+}
+
+#chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#chat-icon img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
